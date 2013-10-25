@@ -1,0 +1,31 @@
+<h1>Listing lessons</h1>
+
+<table>
+  <tr>
+    <th>Lesson number</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Video url</th>
+    <th>Watch</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lessons.each do |lesson| %>
+  <tr>
+    <td><%= lesson.lesson_number %></td>
+    <td><%= lesson.title %></td>
+    <td><%= lesson.content %></td>
+    <td><%= lesson.video_url %></td>
+    <td><%= lesson.watch %></td>
+    <td><%= link_to 'Show', lesson %></td>
+    <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
+    <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lesson', new_lesson_path %>

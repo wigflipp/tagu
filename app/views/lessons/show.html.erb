@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lesson number:</b>
+  <%= @lesson.lesson_number %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @lesson.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @lesson.content %>
+</p>
+
+<p>
+  <b>Video url:</b>
+  <%= @lesson.video_url %>
+</p>
+
+<p>
+  <b>Watch:</b>
+  <%= @lesson.watch %>
+</p>
+
+
+<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<%= link_to 'Back', lessons_path %>

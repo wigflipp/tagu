@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Member:</b>
+  <%= @watch.member_id %>
+</p>
+
+<p>
+  <b>Lesson number:</b>
+  <%= @watch.lesson_number %>
+</p>
+
+<p>
+  <b>Watch:</b>
+  <%= @watch.watch %>
+</p>
+
+
+<%= link_to 'Edit', edit_watch_path(@watch) %> |
+<%= link_to 'Back', watches_path %>

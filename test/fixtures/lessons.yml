@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lesson_number: 1
+  title: MyString
+  content: MyText
+  video_url: MyString
+  watch: false
+
+two:
+  lesson_number: 1
+  title: MyString
+  content: MyText
+  video_url: MyString
+  watch: false
